@@ -1,7 +1,99 @@
 /* header */
-header {
+header,
+footer {
+    // position: fixed;
     width: 100%;
-    height: 70px;
-    background-color: #000;
-    color: red;
+    height: 108px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ccc;
+    .header {
+        overflow: hidden;
+        .logo {
+            float: left;
+            background-image: url('./images/logo.png');
+            background-size: 235px 108px;
+            width: 235px;
+            height: 108px;
+        }
+        nav {
+            float: right;
+            height: 108px;
+            span {
+                display: inline-block;
+                height: 108px;
+                padding: 0 15px;
+                box-sizing: border-box;
+                line-height: 108px;
+            }
+            span:nth-child(5) {
+                margin-right: 100px;
+            }
+            button {
+                float: right;
+                width: 110px;
+                height: 37px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                border-radius: 20px;
+                margin-top: 35px;
+                margin-right: 36px;
+                color: #fff;
+            }
+            .active {
+                color: #756edc;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}
+footer {
+    // width: 100%;
+    height: 147px;
+    background-color: #fff;
+    .header {
+        .logo {
+            height: 93px;
+        }
+        nav {
+            height: 93px;
+            span {
+                height: 93px;
+                line-height: 93px;
+            }
+            button {
+                margin-top: 36px;
+                margin-right: 36px;
+            }
+            .active {
+                color: #756edc;
+                border-bottom: none;
+            }
+        }
+    }
+    .footerBootom {
+        font-size: 12px;
+        height: 53px;
+        line-height: 53px;
+        // padding: 0 36px;
+        margin: 0 36px;
+        border-top: 1px solid #ccc;
+        .icon {
+            float: right;
+            height: 100%;
+            a {
+                display: inline-block;
+                width: 25px;
+                height: 53px;
+                background-image: url('./images/icon1.png');
+                background-size: 16px 13px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        
+    }
 }

@@ -9,4 +9,5 @@ $(function() {
     // 头部
     $('#header').load('../core/header.html');
     $('#footer').load('../core/footer.html');
+    // $('head').load('../../core/corePage.js');
 })

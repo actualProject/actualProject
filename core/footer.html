@@ -1,1 +1,32 @@
-<div>底部</div>
+<div>
+    <div class="header">
+        <div class="logo">
+        </div>
+        <nav>
+            <span class="active">Home</span>
+            <span>Why MISOCIAL</span>
+            <span>Features</span>
+            <span>Articles</span>
+            <span>Pricing</span>
+            <button>get started</button>
+        </nav>
+    </div>
+    <div class="footerBootom">
+        <span>
+            © 2017 Mass Impressions & Tranmautritam. Make the right impression.
+        </span>
+        <span class="icon">
+            <a class="facebook" href="http://www.baidu.com"></a>
+            <a class="tiw" href="http://www.baidu.com"></a>
+            <a href="http://www.baidu.com"></a>
+            <a href="http://www.baidu.com"></a>
+        </span>
+    </div>
+</div>
+<script>
+    $(function() {
+        $('nav').on('click',function() {
+            $(event.target).addClass('active').siblings().removeClass('active');
+        });
+    })
+</script>
