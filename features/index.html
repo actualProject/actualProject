@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="../core/lib/normalize.css">
     <link rel="stylesheet/less" href="./index.less">
     <link rel="stylesheet/less" href="../core/style.less">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <script src="../core/lib/less.min.js"></script>
     <script src="../core/lib/jquery-2.1.4.min.js"></script>
     <script src="../core/lib/underscore-min.js"></script>
     <script src="../core/lib/fun.js"></script>
     <script src="../core/lib/storingUser.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
 </head>
 <body>
@@ -32,21 +34,24 @@
         </section>
         <!--内容第一部分-->
         <section class="s1">
-            <img class="animated slideInLeft" src="images/section1.png" alt="">
+            <img src="images/section1.png" alt="">
             <p>BENEFITS</p>
             <h2>All your data collected in one place</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
             <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a>GET STARTED</a>
+            <a href="../getStarted/index.html">GET STARTED</a>
             <img src="images/section2-down.png" alt="">
         </section>
         <!--内容第二部分-->
         <section class="s2">
-            <p>WHAT WE BELIEVE</p>
-            <h2>All your data collected in one place</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-            <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a>GET STARTED</a>
+            <div class="moveLeft">
+                <p>WHAT WE BELIEVE</p>
+                <h2>All your data collected in one place</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="../getStarted/index.html">GET STARTED</a>
+            </div>
+
             <img src="images/section2-down.png" alt="">
         </section>
         <!--内容第三部分-->
@@ -139,42 +144,31 @@
                             <p>Easily create tasks for yourself or assign one to a teammate.</p>
                         </div>
                     </li>
-                    <li>
-                        <div class="left">
-                            <img src="images/section3-img.png" alt="">
-                        </div>
-                        <div class="right">
-                            <h3>Analytics</h3>
-                            <p>Easily create tasks for yourself or assign one to a teammate.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left">
-                            <img src="images/section3-img.png" alt="">
-                        </div>
-                        <div class="right">
-                            <h3>Analytics</h3>
-                            <p>Easily create tasks for yourself or assign one to a teammate.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left">
-                            <img src="images/section3-img.png" alt="">
-                        </div>
-                        <div class="right">
-                            <h3>Analytics</h3>
-                            <p>Easily create tasks for yourself or assign one to a teammate.</p>
-                        </div>
-                    </li>
                 </ul>
             </div>
             <div class="s3-slider">
-                <img src="images/section3-slider1.png" alt="">
-                <img src="images/section3-slider1.png" alt="">
-                <img src="images/section3-slider1.png" alt="">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/section3-slider1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/section3-slider1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/section3-slider1.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img class="down" src="images/header-down.png" alt="">
+
         </section>
+        <!--内容第四部分-->
         <section class="s4">
             <div class="s4-header">
                 <p>OUR FEATURES</p>
@@ -187,21 +181,26 @@
                     <p>Icon box title</p>
                     <span></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
+                    <div class="meed"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p></div>
                 </div>
                 <div>
                     <img src="images/section4-1.png" alt="">
                     <p>Icon box title</p>
                     <span></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
+                    <div class="meed"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p></div>
                 </div>
                 <div>
                     <img src="images/section4-1.png" alt="">
                     <p>Icon box title</p>
                     <span></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
+                    <div class="meed"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p></div>
                 </div>
+
             </div>
         </section>
+        <!--内容第五部分-->
         <section class="s5">
             <div class="up">
                 <p>TESTIMONIALS</p>
@@ -212,8 +211,9 @@
             <div class="down">
                 <p>SOCAL MARKETING & ANALYTICS</p>
                 <h2>Take control of your data</h2>
-                <a href="#" class="current">get started</a>
+                <a href="../getStarted/index.html">get started</a>
                 <a href="#">explore features</a>
+                <img src="images/pad.png" alt="">
             </div>
         </section>
     </div>
