@@ -1,16 +1,5 @@
 $(function () {
-    //头部下面标签
-    (function () {
-        var sudu = 0;
-        setInterval(function () {
-            sudu += 2;
-            zifu = sudu + 'px';
-            if (sudu == 30) {
-                sudu = -30
-            }
-            $('.banner>div>img').css('margin-top', zifu);
-        }, 100)
-    })();
+
 //    点击蒙版出现
     $('.btn').click(function () {
         $('.mengban').css('display', 'block');
