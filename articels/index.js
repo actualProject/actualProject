@@ -23,22 +23,20 @@ $(function () {
                 $('.case_data').append(newBox);
             });
         };
+        //发送请求获取数据
         $.ajax({
             url: '../page.json',
             data: 'json',
             async: true,
-            success: function (data) {
+            success: (data)=> {
                 let dataArr = data.product;
                 console.log(dataArr);
                 UI(dataArr);
-
             },
-            error: function (err) {
-                alert(1111);
+            error: (err)=> {
+                alert('请求失败,请检查网络!');
             }
         });
-
-
     });
-
+    $('.')
 })
