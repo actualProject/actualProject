@@ -26,7 +26,6 @@ Public.prototype = {
                 }else {
                     obj = '错误,没有找到';
                 }
-
             },
             error: function(eee) {
                 console.log(eee);
