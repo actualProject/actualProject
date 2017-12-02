@@ -399,7 +399,7 @@
     .down{
       padding: 120px;
       height: 783px;
-      width: 1400px;
+      width: 100%;
       background: url("images/big_bg.png") no-repeat;
       background-size:100% 100%;
       background-position: center center;
@@ -436,12 +436,13 @@
         position: absolute;
         bottom: -150px;
         right: 0;
-        transition: 2s;
+        transition: 1s;
         transform: translateX(0px) rotateZ(0deg);
       }
       img:hover{
-        transition: 2s;
-        transform: translateX(-50px) rotateZ(-5deg);
+        transform: rotate(-6deg) scale(1.1);
+		right: 40px;
+		bottom: -90px;
 
         //animation: Move 2s  alternate infinite;
       }
