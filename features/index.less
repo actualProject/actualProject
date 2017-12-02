@@ -38,9 +38,11 @@
       width: 47px;
       height: 47px;
       margin-top: 100px;
+      animation: UpAndDown 500ms  alternate infinite;
     }
 
   }
+  
   section.s1{
     //width: 1400px;
     height: 790px;
@@ -52,6 +54,13 @@
       position: absolute;
       right: 200px;
       top: 170px;
+      transition: 1.5s;
+      transform: scale(1) rotateZ(0deg);
+    }
+    img:nth-child(1):hover{
+      transition: 1.5s;
+      transform: scale(1.1) rotateZ(360deg);
+
     }
     p:nth-child(2){
       font-size: 18px;
@@ -86,6 +95,13 @@
       color: #a2a2a2;
       border-radius: 15px;
       box-shadow: 0px 0px 10px 0px #cccccc;
+      transition: 1s;
+    }
+    a:hover{
+      background-color: #6e45e2;
+      color: white;
+      text-decoration: none;
+      transition: 1s;
     }
     img:nth-child(7){
       width: 95px;
@@ -94,9 +110,11 @@
       bottom: 10px;
       left: 50%;
       margin-left: -48px;
+      animation: UpAndDown 500ms  alternate infinite;
 
     }
   }
+  
   section.s2{
     //width: 1400px;
     height: 780px;
@@ -106,39 +124,52 @@
     padding-top: 200px;
     padding-left: 60%;
     overflow: hidden;
-    p:nth-child(1){
-      font-size: 18px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      color: #888888;
-      padding-bottom: 10px;
-      text-indent: 1em;
+
+    .moveLeft{
+      transition: 1s ;
+      p:nth-child(1){
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #888888;
+        padding-bottom: 10px;
+        text-indent: 1em;
+      }
+      h2{
+        font-size: 45px;
+        width: 450px;
+        color: #434343;
+      }
+      p:nth-child(3){
+        color: #a2a2a2;
+        padding: 25px 0;
+        width: 450px;
+        line-height: 30px;
+      }
+      p:nth-child(4){
+        color: #a2a2a2;
+        width: 450px;
+        line-height: 30px;
+        padding-bottom: 20px;
+      }
+      a{
+        font-size: 12px;
+        padding: 8px 30px;
+        border: 1px solid #ccc;
+        color: #a2a2a2;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px #cccccc;
+        transition: 1s;
+      }
+      a:hover{
+        background-color: #6e45e2;
+        color: white;
+        text-decoration: none;
+        transition: 1s;
+      }
+
     }
-    h2{
-      font-size: 45px;
-      width: 450px;
-      color: #434343;
-    }
-    p:nth-child(3){
-      color: #a2a2a2;
-      padding: 25px 0;
-      width: 450px;
-      line-height: 30px;
-    }
-    p:nth-child(4){
-      color: #a2a2a2;
-      width: 450px;
-      line-height: 30px;
-      padding-bottom: 20px;
-    }
-    a{
-      font-size: 12px;
-      padding: 8px 30px;
-      border: 1px solid #ccc;
-      color: #a2a2a2;
-      border-radius: 15px;
-      box-shadow: 0px 0px 10px 0px #cccccc;
-    }
+
     img{
       width: 95px;
       height: 88px;
@@ -146,10 +177,14 @@
       bottom: 10px;
       left: 50%;
       margin-left: -48px;
-
+      animation: UpAndDown 500ms  alternate infinite;
+    }
+    .moveLeft:hover{
+      transform: translateX(-50px)
     }
 
   }
+  
   section.s3{
     //width: 1400px;
     height: 1086px;
@@ -207,21 +242,21 @@
       }
     }
     .s3-slider{
-      width: 853px;
-      height: 390px;
+      width: 863px;
+      height: 385px;
       margin: 0 auto;
-      img{
-        width: 853px;
-        height: 390px;
+      position: relative;
+      .carousel-indicators {
+        position: absolute;
+        left: 50%;
+        margin-left: -40px;
+        width: 80px;
+        border-radius: 20px;
+        background-color: #cccccc;
       }
     }
-    .down{
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      //margin-left: -48px;
-    }
   }
+  
   section.s4{
     background-color: #f8f9fb;
     padding-top: 70px;
@@ -259,14 +294,17 @@
       justify-content: space-between;
       align-content: center;
 
+      
       div{
         background-color: #fff;
         width: 330px;
-        padding: 40px 30px;
+        height: 400px;
+        padding: 50px 30px;
         border: 1px solid #cccccc;
         margin: 10px;
         border-radius: 15px;
         box-shadow: 0px 0px 40px 0px #cccccc;
+        position: relative;
         p:nth-child(2){
           padding: 20px;
           color: #434343;
@@ -281,9 +319,29 @@
           color: #a2a2a2;
           line-height: 30px;
         }
+        .meed{
+          width: 330px;
+          height: 400px;
+          background-color: black;
+          position: absolute;
+          z-index: 2;
+          left: -11px;
+          top: -11px;
+          opacity: 0.5;
+          color: white;
+          font-size: 25px;
+          line-height: 40px;
+          padding-top: 60px;
+          display: none;
+          transition: 10s;
+        }
+      }
+      div:hover .meed{
+        display: block;
       }
     }
   }
+  
   section.s5{
     .up{
       padding: 70px 150px;
@@ -310,8 +368,9 @@
         text-indent: 2em;
       }
       img{
-        width: 600px;
+        width: 550px;
         position: absolute;
+        z-index: 10;
         right: 0;
         top: 0;
       }
@@ -320,10 +379,11 @@
       padding: 120px;
       height: 783px;
       width: 1400px;
-      background: url("images/section5-bg.png") no-repeat;
+      background: url("images/big_bg.png") no-repeat;
       background-position: center center;
       text-align: center;
       color: white;
+      position: relative;
       p{
         font-size: 18px;
         font-weight: bold;
@@ -342,13 +402,41 @@
         background-color: #fff;
         border-radius: 15px;
         margin: 0 10px;
+        transition: 1s;
       }
-      a.current{
+      a:hover{
         background-color: #6e45e2;
         color: white;
+        text-decoration: none;
+        transition: 1s;
+      }
+      img{
+        position: absolute;
+        bottom: -150px;
+        right: 0;
+        transition: 2s;
+        transform: translateX(0px) rotateZ(0deg);
+      }
+      img:hover{
+        transition: 2s;
+        transform: translateX(-50px) rotateZ(-5deg);
+
+        //animation: Move 2s  alternate infinite;
       }
     }
   }
+
+
+
+  @keyframes UpAndDown {
+    from{
+       transform: translateY(0px);
+     }
+    to{
+      transform: translateY(-10px);
+    }
+  }
+
 }
 
 
