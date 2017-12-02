@@ -3,12 +3,24 @@
         <div class="logo">
         </div>
         <nav>
-            <span class="active"><a href="javascript:">Home</a></span>
-            <span><a href="javascript:">Why MISOCIAL</a></span>
-            <span><a href="javascript:">Features</a></span>
-            <span><a href="javascript:">Articles</a></span>
-            <span><a href="javascript:">Pricing</a></span>
-            <button><a href="javascript:">get started</a></button>
+            <span class="active">
+                <a href="../homePage/index.html">Home</a>
+            </span>
+            <!-- <span>
+                <a href="javascript:">Why MISOCIAL</a>
+            </span> -->
+            <span>
+                <a href="../features/index.html">Features</a>
+            </span>
+            <span>
+                <a href="../articels/index.html">Articles</a>
+            </span>
+            <span>
+                <a href="../pricing/index.html">Pricing</a>
+            </span>
+            <button>
+                <a href="../getStarted/index.html">get started</a>
+            </button>
         </nav>
     </div>
     <div class="footerBootom">
@@ -24,8 +36,8 @@
     </div>
 </div>
 <script>
-    $(function() {
-        $('nav').on('click',function() {
+    $(function () {
+        $('nav').on('click', function () {
             $(event.target).addClass('active').siblings().removeClass('active');
         });
     })
