@@ -207,6 +207,10 @@
                 top: 50%;
                 margin-left: -25px;
                 margin-top: -25px;
+                transition: all 0.5s;
+            }
+            .playbtn:hover{
+                transform: scale(1.2);
             }
         }
         .down{
@@ -228,6 +232,7 @@
                 position: absolute;
                 left: 0;
                 bottom: 40px;
+                animation: mymove 30s linear infinite; 
             }
         }
         .right_content{
@@ -386,4 +391,12 @@
 }
 .down:hover{
     background-color: #6E45E2;
+}
+@keyframes mymove {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
