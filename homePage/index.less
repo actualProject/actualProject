@@ -276,7 +276,100 @@
                 font-size: 12px;
             }
         }
+        .our_team_content{
+            .teamlist{
+                width: 1150px;
+                margin: 55px auto;
+                li{
+                    width: 270px;
+                    height: 300px;
+                    text-align: center;
+                    float: left;
+                    margin: 8px;
+                    .team_pic{
+                        width: 100%;
+                        height: 204px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .team_content{
+                        margin-top: 30px;
+                        color: #9fa4af;
+                        .title{
+                            font-weight: bold;
+                            font-size: 12px;
+                        }
+                        .con{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .down{
+            bottom: -25px;
+            box-shadow: 0 0 10px #c7c7c7;
+            z-index: 999;
+        }
     }
+    .content_bottom {
+    width: 100%;
+    height: 788px;
+    background: url("images/bg_map.png") no-repeat,url("images/bg_02.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .bottom_text {
+      width: 600px;
+      height: 300px;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      margin-left: -300px;
+      color: #fff;
+      p, h2 {
+        margin: 20px 0;
+      }
+      p {
+        font-size: 12px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      span {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 10px;
+        display: inline-block;
+        border-radius: 25px;
+        color: #666;
+        background-color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        transition: all 0.5s;
+      }
+      span:hover {
+        background-color: #6e45e3;
+        color: #fff;
+        transform: scale(1.2);
+      }
+    }
+    img {
+      position: absolute;
+      left: 50%;
+      margin-left: -300px;
+      bottom: -150px;
+      transition: all 1s;
+    }
+  }
+  .content_bottom:hover img{
+    margin-left: -450px;
+    bottom: -50px;
+  }
 }
 .down{
     width: 50px;
