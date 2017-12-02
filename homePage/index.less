@@ -2,10 +2,9 @@
     width: 100%;
     overflow: hidden;
     .banner{
-        width: 1400px;
+        width: 100%;
         height: 788px;
         background: url("images/bg_01.png") no-repeat;
-        background-size: 100% 100%;
         position: relative;
         .slideContent{
             width: 280px;    
@@ -16,7 +15,8 @@
             .smallCaption{
                 font-size: 12px;
             }
-            h1{
+            h2{
+                font-size: 36px;
                 margin: 10px 0;
             }
             p{
@@ -34,6 +34,7 @@
                     color: #cccccc;
                     background-color: #ffffff;
                     cursor: pointer;
+                    transition: all 0.5s;
                 }
                 button:hover{
                     color: #ffffff;
@@ -46,10 +47,9 @@
         }
     }
     .mockup{
-        width: 1400px;
+        width: 100%;
         height: 788px;
         background: url("images/mockup_bg.png") no-repeat;
-        background-size: 100% 100%;
         position: relative;
         .content{
             width: 310px;    
@@ -60,7 +60,8 @@
             .smallCaption{
                 font-size: 12px;
             }
-            h1{
+            h2{
+                font-size: 36px;
                 margin: 10px 0;
             }
             p{
@@ -78,10 +79,65 @@
                     color: #cccccc;
                     background-color: #ffffff;
                     cursor: pointer;
+                    transition: all 0.5s;
                 }
                 button:hover{
                     color: #ffffff;
                     background-color: #6E45E2;
+                }
+            }
+        }
+    }
+    .features{
+        width: 100%;
+        height: 1093px;
+        background: url("images/bg_02.png") no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        text-align: center;
+        .features_header{
+            padding-top: 80px;
+            color: #ffffff;
+            .smallCaption{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 36px;
+                margin: 10px 0;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .features_content{
+            width: 820px;
+            margin: 0 auto;
+            padding-top: 85px;
+            text-align: left;
+            color: #ffffff;                       
+            .projects{
+                li{
+                    width: 250px;
+                    float: left;
+                    margin: 25px 10px;
+                    span{
+                        float: left;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        margin-top: 5px;
+                        margin-bottom: 15px;
+                        background: url("images/project.png") no-repeat center center;
+                        background-color: #ffffff;
+                    }
+                    h3{
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
                 }
             }
         }
@@ -98,6 +154,7 @@
     bottom: 50px;
     margin-left: -25px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .down:hover{
     background-color: #6E45E2;
