@@ -55,6 +55,7 @@
         bottom: 300px;
         //background-color: red;
 
+
         li {
           width: 321px;
           height: 473px;
@@ -68,7 +69,7 @@
           position: relative;
           color: #aaaeb8;
           line-height: 10px;
-          transition:  transform 0.5s;
+          transition: transform 0.5s;
         }
 
         img {
@@ -97,6 +98,7 @@
             line-height:20px;
           }
         }
+        .plan,
         .btn {
           position: absolute;
           bottom: 50px;
@@ -108,8 +110,10 @@
           line-height: 40px;
           border-radius: 30px;
           font-size: 10px;
+          transition: transform 0.5s;
         }
-        .cur {
+        .plan:hover,
+        .btn:hover{
           background-color: #6e45e2;
           color: white;
         }
@@ -143,7 +147,79 @@
       }
     }
 
+
   }
+  //蒙版
+  .mengban{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 2;
+    display: none;
+    .x-meng{
+      width: 400px;
+      height: 300px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #f7f8fa;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      color: #999;
+      font-size:20px;
+      h3{
+        font-size:30px;
+        padding-top: 50px;
+        margin-left: 120px;
+      }
+      //下拉菜单
+      form{
+        margin-left: 125px;
+        margin-top:20px;
+        margin-bottom: 20px;
+      }
+      p{
+        margin-left: 160px;
+        line-height: 30px;
+      }
+
+      button{
+        width: 100px;
+        height: 40px;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        margin-left: -50px;
+      }
+
+    }
+  //  二维码
+    .ewm{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      display: none;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+
   .jiaobu {
     width: 100%;
     height: 381px;
@@ -164,6 +240,7 @@
       left: 50%;
       bottom: 120px;
       margin-left: -210px;
+      //transform: 0.5s;
       li {
         width: 160px;
         height: 40px;
@@ -177,10 +254,11 @@
         margin-left: 10px;
         //background-color: #6e45e2;
       }
-      .cur2{
-          background-color: #6e45e2;
-          color: white;
+      li:hover{
+        background-color: #6e45e2;
+        color: white;
       }
+
     }
 
   }

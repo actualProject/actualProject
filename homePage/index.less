@@ -209,7 +209,167 @@
                 margin-top: -25px;
             }
         }
+        .down{
+            box-shadow: 0 0 10px #c7c7c7;
+        }
     }
+    .about_us{
+        width: 100%;
+        height: 788px;
+        background: url("images/bg_03.png") no-repeat;
+        position: relative;
+        .left_content{
+            .computer{
+                position: absolute;
+                left: 200px;
+                bottom: 90px;
+            }
+            .circles{
+                position: absolute;
+                left: 0;
+                bottom: 40px;
+            }
+        }
+        .right_content{
+            width: 310px;    
+            color: #4F4F6F;
+            position: absolute;
+            left: 60%;
+            top: 25%;
+            .smallCaption{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 36px;
+                margin: 10px 0;
+            }
+            p{
+                color: #9fa4af;
+                margin-top: 20px; 
+                font-size: 12px;
+            }
+        }
+        .down{
+            left: 60%;
+            bottom: 100px;
+            box-shadow: 0 0 10px #c7c7c7;
+        }
+    }
+    .our_team{
+        width: 100%;
+        height: 930px;
+        position: relative;
+        text-align: center;
+        .our_team_header{
+            width: 300px;
+            margin: 0 auto;            
+            padding-top: 80px;
+            color: #4F4F6F;
+            .smallCaption{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 36px;
+                margin: 10px 0;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .our_team_content{
+            .teamlist{
+                width: 1150px;
+                margin: 55px auto;
+                li{
+                    width: 270px;
+                    height: 300px;
+                    text-align: center;
+                    float: left;
+                    margin: 8px;
+                    .team_pic{
+                        width: 100%;
+                        height: 204px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .team_content{
+                        margin-top: 30px;
+                        color: #9fa4af;
+                        .title{
+                            font-weight: bold;
+                            font-size: 12px;
+                        }
+                        .con{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .down{
+            bottom: -25px;
+            box-shadow: 0 0 10px #c7c7c7;
+            z-index: 999;
+        }
+    }
+    .content_bottom {
+    width: 100%;
+    height: 788px;
+    background: url("images/bg_04.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    .bottom_text {
+      width: 600px;
+      height: 300px;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      margin-left: -300px;
+      color: #fff;
+      p, h2 {
+        margin: 20px 0;
+      }
+      p {
+        font-size: 12px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      span {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 10px;
+        display: inline-block;
+        border-radius: 25px;
+        color: #666;
+        background-color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        transition: all 0.5s;
+      }
+      span:hover {
+        background-color: #6e45e3;
+        color: #fff;
+        transform: scale(1.2);
+      }
+    }
+    img {
+      position: absolute;
+      left: 50%;
+      margin-left: -300px;
+      bottom: -150px;
+      transition: all 1s;
+    }
+  }
+  .content_bottom:hover img{
+    margin-left: -450px;
+    bottom: -50px;
+  }
 }
 .down{
     width: 50px;
