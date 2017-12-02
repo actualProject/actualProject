@@ -66,7 +66,7 @@ Public.prototype = {
             return '请输入用户密码';
         }
         const id = _.random(100000, 999999);
-        const arr = getUser();
+        const arr = this.getUser();
         const obj = {};
         obj.phone = this.phone;
         obj.password = this.password;
