@@ -4,7 +4,10 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-
+* {
+    padding: 0;
+    margin: 0;
+}
 html {
     width:100%;
     /* min-width: 1600px; */
@@ -100,6 +103,8 @@ template, /* 1 */
  */
 
 a {
+    text-decoration: none;
+    /* color: #ccc; */
     background-color: transparent; /* 1 */
     -webkit-text-decoration-skip: objects; /* 2 */
 }
