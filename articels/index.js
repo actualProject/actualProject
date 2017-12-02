@@ -33,10 +33,9 @@ $(function () {
                 console.log(dataArr);
                 UI(dataArr);
             },
-            error: (err)=> {
+            error: ()=> {
                 alert('请求失败,请检查网络!');
             }
         });
     });
-    $('.')
 })
