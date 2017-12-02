@@ -14,6 +14,7 @@
     <script src="../core/lib/fun.js"></script>
     <script src="../core/lib/storingUser.js"></script>
     <script src="./index.js"></script>
+
 </head>
 <body>
 <!-- 头部 -->
@@ -22,10 +23,13 @@
 <div class="content">
     <!--头部背景-->
     <div class="banner">
-        <p>—— SOCIAL MARKETING & ANALYTICS ——</p>
-        <p class="p-h">Pricing Table</p>
-        <p>Lorem ipsum dolor sit amet,consectetur adipisicing</p>
-        <p>elit,sed do eiusmod tempor incididunt ut.</p>
+
+            <p class="bounce">—— SOCIAL MARKETING & ANALYTICS ——</p>
+            <p class="p-h">Pricing Table</p>
+            <p>Lorem ipsum dolor sit amet,consectetur adipisicing</p>
+            <p>elit,sed do eiusmod tempor incididunt ut.</p>
+
+
         <div>
             <img src="images/header-down.png" alt="">
         </div>
@@ -44,7 +48,9 @@
                 <li>
                     <img src="images/Pricing_13.png" alt="">
                     <P class="P1">PERSONAL</P>
-                    <span class="sm">$</span><span class="big">0</span><span>/month</span>
+                    <span class="sm">$</span>
+                    <span class="big">0</span>
+                    <span>/month</span>
                     <div class="text-s">
                         <p>Lorem ipsum dolor sit amet</p>
                         <p>sed do eiusmod tempor incididuntut.</p>
@@ -52,7 +58,7 @@
                         <p>quis nostrud exercitation uliamco laboris.</p>
                         <p>Ea commodo consequar.</p>
                     </div>
-                    <div class="btn">
+                    <div class="plan">
                         SELECT PLAN
                     </div>
                 </li>
@@ -67,7 +73,7 @@
                         <p>quis nostrud exercitation uliamco laboris.</p>
                         <p>Ea commodo consequar.</p>
                     </div>
-                    <div class="btn cur">
+                    <div class="btn">
                         SELECT PLAN
                     </div>
                 </li>
@@ -88,8 +94,29 @@
                 </li>
             </ul>
         </div>
-
     </div>
+    <!--蒙版-->
+    <div class="mengban">
+        <div class="x-meng">
+            <h3>$<span></span>/month</h3>
+            <form action="" method="get">
+                <label>选择购买月数：</label>
+                <select name="" id="mySelect">
+                    <option selected  value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </form>
+            <button class="submit">提交</button>
+            <p>合计$<span>444</span></p>
+        </div>
+        <div class="ewm">
+            <img src="images/PDF.png" alt="">
+        </div>
+    </div>
+    <!--二维码-->
+
 
     <!--底部-->
     <div class="jiaobu">
