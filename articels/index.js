@@ -51,7 +51,7 @@ $(function () {
                     UI(dataArr);
                 },
                 error: () => {
-                    alert('请求失败,请检查网络!');
+                    alert('Attempt failed,verify that the network!');
                 }
             });
         }
@@ -84,7 +84,7 @@ $(function () {
             $('.userName').val('');
             $('.password').val('');
             setTimeout(function () {
-                alert('SUCESS!');
+                alert('Login success!');
                 $('#panel').css({'display': 'none'});
             }, 10);
             return;
