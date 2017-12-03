@@ -59,6 +59,8 @@ $(function () {
          });
         var result = public.newUser();
         alert(result);
+        sessionStorage.phone=obj.phone;
+        window.location.href="../homePage/index.html?phone=" + userName;
         $('.userName').val("");
         $('.password').val("");
     })
