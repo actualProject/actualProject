@@ -1,12 +1,24 @@
-*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#footer {
+  	nav {
+      	.features {
+          	border-bottom: 1px solid #ccc;
+          	a {
+            	color: #87cdcf;
+          	}
+      	}
+  	}
 }
-//a{
-//  text-decoration: none;
-//  color: #cccccc;
-//}
+#header {
+  	nav {
+      	.features {
+          	// background-color: #6e45e2;
+          	border-bottom: 1px solid #fff;
+          	a {
+              	color: #fff;
+          	}
+      	}
+  	}
+}
 
 .content{
   width: 100%;
@@ -15,6 +27,7 @@
     //width: 1400px;
     height: 561px;
     background: url("images/header-bg.png") no-repeat;
+    background-size:100% 100%;
     background-position: center center;
     text-align: center;
     color: white;
@@ -47,6 +60,7 @@
     //width: 1400px;
     height: 790px;
     background: url("images/section1-bg.png") no-repeat;
+    background-size:100% 100%;
     background-position: center center;
     position: relative;
     padding: 160px;
@@ -119,6 +133,7 @@
     //width: 1400px;
     height: 780px;
     background: url("images/section2-bg.png") no-repeat;
+    background-size:100% 100%;
     background-position: center center;
     position: relative;
     padding-top: 200px;
@@ -189,6 +204,7 @@
     //width: 1400px;
     height: 1086px;
     background: url("images/section3-bg.png") no-repeat;
+    background-size:100% 100%;
     background-position: center center;
     position: relative;
     padding-top: 40px;
@@ -383,8 +399,9 @@
     .down{
       padding: 120px;
       height: 783px;
-      width: 1400px;
+      width: 100%;
       background: url("images/big_bg.png") no-repeat;
+      background-size:100% 100%;
       background-position: center center;
       text-align: center;
       color: white;
@@ -419,12 +436,13 @@
         position: absolute;
         bottom: -150px;
         right: 0;
-        transition: 2s;
+        transition: 1s;
         transform: translateX(0px) rotateZ(0deg);
       }
       img:hover{
-        transition: 2s;
-        transform: translateX(-50px) rotateZ(-5deg);
+        transform: rotate(-6deg) scale(1.1);
+		right: 40px;
+		bottom: -90px;
 
         //animation: Move 2s  alternate infinite;
       }

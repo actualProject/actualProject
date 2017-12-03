@@ -1,11 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
+#footer {
+  	nav {
+      	.articles {
+          	border-bottom: 1px solid #ccc;
+          	a {
+              color: #87cdcf;
+          	}
+      	}
+  	}
 }
+#header {
+  	nav {
+      	.articles {
+          	// background-color: #6e45e2;
+          	border-bottom: 1px solid #fff;
+          	a {
+              	color: #fff;
+          	}
+      	}
+  	}
+}
+//内容部分
 .content {
   width: 100%;
   background-color: #f9fafc;
   position: relative;
+  //轮播图
   .slider {
     width: 100%;
     height: 581px;
@@ -80,10 +99,11 @@
         width: 5%;
       }
   }
-
+  //案例
   .case {
     margin-top: 60px;
     text-align: center;
+    //产品展示
     .plan {
       width: 355px;
       height: 455px;
@@ -159,7 +179,101 @@
       color: #fff;
       transform: scale(1.2);
     }
+  //  登录框
+    #panel{
+      width:400px;
+      height: 350px;
+      background-color: white;
+      text-align: left;
+      border-radius: 5px;
+      box-shadow: -10px 20px 100px black;
+      position: fixed;
+      top:50%;
+      left:50%;
+      margin-left: -200px;
+      margin-top: -200px;
+      display: none;
+      .panel-header{
+        width:100%;
+        height:64px;
+        background-color: #6e45e3;
+        border-radius: 5px 5px 0 0;
+        line-height: 64px;
+        color:white;
+        text-align: center;
+        margin-bottom: 10px;
+        cursor: move;
+        overflow: hidden;
+        position: relative;
+        #close{
+          font-size:20px;
+          position: absolute;
+          top:-15px;
+          right:10px;
+          cursor: pointer;
+        }
+      }
+      .panel-content{
+        padding: 20px;
+        .user-pwd{
+          margin-bottom: 15px;
+          height: 40px;
+          position: relative;
+          img{
+            position: absolute;
+            top: 7px;
+            left: 6px;
+          }
+          input{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding-left: 38px;
+            border-radius: 5px;
+            border:1px solid #dddddd;
+          }
+          input:focus{
+            outline: none;
+            border: 1px solid #6e45e3;
+            box-shadow: 0 0 10px #6e45e3;
+          }
+        }
+        .setting{
+          a{
+            color: #0366d6;
+            font-size: 13px;
+            float: right;
+          }
+        }
+        .login-btn{
+          margin: 15px 0;
+          width: 100%;
+          height: 38px;
+          background-color: #6e45e3;
+          /*去除边框*/
+          border: 0;
+          font-size: 20px;
+          color: white;
+          border-radius: 5px;
+        }
+        .login-btn:focus{
+          outline: none;
+        }
+        .reg{
+          text-align: center;
+          margin-bottom: 15px;
+          color: darkgray;
+          font-size: 13px;
+        }
+        .reg a{
+          color: #0366d6;
+        }
+
+      }
+
+    }
   }
+  //下半部分内容
   .content_bottom {
     width: 100%;
     height: 788px;

@@ -3,22 +3,22 @@
         <div class="logo">
         </div>
         <nav>
-            <span class="active">
-                <a href="../homePage/index.html">Home</a>
+            <span class="home">
+                <a style="text-decoration: none;" href="../homePage/index.html">Home</a>
             </span>
             <!-- <span>
                 <a href="javascript:">Why MISOCIAL</a>
             </span> -->
-            <span>
+            <span class="features">
                 <a href="../features/index.html">Features</a>
             </span>
-            <span>
+            <span class="articles">
                 <a href="../articels/index.html">Articles</a>
             </span>
-            <span>
+            <span class="pricing">
                 <a href="../pricing/index.html">Pricing</a>
             </span>
-            <button>
+            <button class="getStarted">
                 <a href="../getStarted/index.html">get started</a>
             </button>
         </nav>
@@ -36,9 +36,9 @@
     </div>
 </div>
 <script>
-    $(function () {
-        $('nav').on('click', function () {
-            $(event.target).addClass('active').siblings().removeClass('active');
-        });
-    })
+    // $(function () {
+    //     $('nav').on('click', function () {
+    //         $(event.target).addClass('active').siblings().removeClass('active');
+    //     });
+    // })
 </script>
