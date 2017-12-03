@@ -49,10 +49,11 @@ $(function() {
         });
 
 
-        console.log(1111);
-        console.log(data);
+        // console.log(1111);
+        // console.log(data);
         window.localStorage.setItem("users",JSON.stringify(data));
-        console.log(window.localStorage.getItem("users"));
+        window.location.href="../homePage/index.html";
+        // console.log(window.localStorage.getItem("users"));
 
 
     })
