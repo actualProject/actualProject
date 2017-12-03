@@ -33,14 +33,22 @@ $(function () {
         $('.x-meng').css('display', 'none');
     });
 //点击蒙版消失 清除记录
-    $('.mengban').click(function () {
+
+    $('.mengban').click(function() {
         $('.mengban').css('display', 'none');
         $('body').css('overflow', 'auto');
         $("#mySelect option:first").prop("selected", 'selected');
         $('.mengban>.ewm').css('display','none');
         $('.x-meng').css('display', 'block');
     });
-//    提交事件
+//    点击关闭按钮
+    $('.close').click(function() {
+        $('.mengban').css('display', 'none');
+        $('body').css('overflow', 'auto');
+        $("#mySelect option:first").prop("selected", 'selected');
+        $('.mengban>.ewm').css('display','none');
+        $('.x-meng').css('display', 'block');
+    });
 });
 
 

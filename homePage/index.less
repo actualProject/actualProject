@@ -135,9 +135,9 @@
         .features_content{
             width: 850px;
             margin: 0 auto;
-            padding: 85px 20px 0 20px;
+            padding: 70px 20px 0 20px;
             text-align: left;
-            color: #ffffff;                       
+            color: #ffffff; 
             .projects{
                 li{
                     width: 250px;
@@ -149,10 +149,15 @@
                         height: 50px;
                         border-radius: 50%;
                         margin-right: 20px;
-                        margin-top: 5px;
+                        margin-top: 25px;
                         margin-bottom: 15px;
                         background: url("images/project.png") no-repeat center center;
                         background-color: #ffffff;
+                        transition: all 0.5s;
+                    }
+                    span:hover{
+                        transform: rotate(360deg);
+                        background-color: #6E45E2;
                     }
                     h3{
                         font-size: 16px;
@@ -161,6 +166,22 @@
                     p{
                         font-size: 10px;
                     }
+                }
+            }
+        }
+        .carousel{
+            width: 853px;
+            height: 375px;
+            position: absolute;
+            left: 50%;
+            bottom: -60px;
+            margin-left: -426px;
+            .carousel-indicators{
+                li{
+                    border: 1px solid #6E45E2;
+                }
+                .active{
+                    background-color: #87cdcf;
                 }
             }
         }
