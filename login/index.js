@@ -8,9 +8,7 @@ $(function () {
     }
 
 
-
     $('.loginT').click(function (){
-        console.log('1234');
         $('.loginT').addClass('active').siblings().removeClass('active')
         $('.login').css("display","block").siblings('.registered').css("display","none")
     })
@@ -61,7 +59,7 @@ $(function () {
          });
         var result = public.newUser();
         alert(result);
-        sessionStorage.phone=obj.phone;
+        sessionStorage.phone=userName;
         window.location.href="../getStarted/index.html?phone=" + userName;
         $('.userName').val("");
         $('.password').val("");
