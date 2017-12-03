@@ -72,7 +72,7 @@ Public.prototype = {
         arr.push(obj);
         JSON.stringify(arr);
         localStorage.setItem('users',JSON.stringify(arr));
-        return '注册成功';
+        return 'registration success!';
     }
 
 }

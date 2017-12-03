@@ -41,19 +41,24 @@ $(function () {
         if (getSession('phone') == null) {
             $('#panel').slideDown();
         } else {
-            //发送请求获取数据
-            $.ajax({
-                url: '../page.json',
-                dataType: 'json',
-                async: true,
-                success: (data) => {
-                    let dataArr = data.product;
-                    UI(dataArr);
-                },
-                error: () => {
-                    alert('请求失败,请检查网络!');
-                }
+            const public = new Public({
+                form: 'product'
             });
+            const dataArr = public.getData();
+            UI(dataArr);
+            //发送请求获取数据
+            // $.ajax({
+            //     url: '../page.json',
+            //     dataType: 'json',
+            //     async: true,
+            //     success: (data) => {
+            //         let dataArr = data.product;
+            //         UI(dataArr);
+            //     },
+            //     error: () => {
+            //         alert('请求失败,请检查网络!');
+            //     }
+            // });
         }
 
     });
