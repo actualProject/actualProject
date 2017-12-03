@@ -62,9 +62,9 @@ $(function () {
         var result = public.newUser();
         alert(result);
         sessionStorage.phone=obj.phone;
-        window.location.href="../homePage/index.html?phone=" + userName;
-        // $('.userName').val("");
-        // $('.password').val("");
+        window.location.href="../getStarted/index.html?phone=" + userName;
+        $('.userName').val("");
+        $('.password').val("");
     })
     function phoneReg (phone) {  
         var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;  

@@ -18,9 +18,9 @@
             <span class="pricing">
                 <a href="../pricing/index.html">Pricing</a>
             </span>
-            <button class="getStarted">
-                <a href="../getStarted/index.html">get started</a>
-            </button>
+            <div class="quit">
+                <img src="../core/images/portrait.png" alt="">
+            </div>
         </nav>
     </div>
     <div class="footerBootom">
@@ -36,9 +36,27 @@
     </div>
 </div>
 <script>
-    // $(function () {
-    //     $('nav').on('click', function () {
-    //         $(event.target).addClass('active').siblings().removeClass('active');
-    //     });
-    // })
+     $(function () {
+//         $('nav').on('click', function () {
+//             $(event.target).addClass('active').siblings().removeClass('active');
+//         });
+         if(window.sessionStorage.getItem("phone")){
+             $('.tc').css("display","block");
+         }else{
+             $('.tc').css("display","none");
+         }
+         $('.tc').click(function (){
+             window.sessionStorage.clear();
+             $('.tc').css("display","none");
+         })
+         $('.quit img').click(function (){
+             if(window.sessionStorage.getItem("phone")){
+
+             }else{
+                 window.location.href="../login/index.html"
+             }
+         })
+
+
+     })
 </script>
