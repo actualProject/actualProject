@@ -10,9 +10,9 @@ $(function() {
         $(teamCon).html(userPhone);
     });
     $(".about_us .left_content .circles").mouseover(function(){
-        $(".about_us .left_content .computer").animate({ left: "50px", bottom: "175px" }, "slow");
+        $(".about_us .left_content .computer").stop().animate({ left: "50px", bottom: "175px" }, "slow");
     });
     $(".about_us .left_content .circles").mouseout(function () {
-        $(".about_us .left_content .computer").animate({ left: "200px", bottom: "90px" }, "slow");
+        $(".about_us .left_content .computer").stop().animate({ left: "200px", bottom: "90px" }, "slow");
     });
 })
