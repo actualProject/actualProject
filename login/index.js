@@ -24,8 +24,6 @@ $(function () {
         if(userName==''||passWord==''){
             alert("please enter your phone or password!");
             return;
-        }else if(!phoneReg(userName)){
-            alert('The number format is incorrect')
         }
         var public=new Public();
         var user= public.getUser();
@@ -53,6 +51,10 @@ $(function () {
             alert("please enter your phone or password!");
             return;
         }
+        if(!phoneReg(userName)){
+            alert('The number format is incorrect');
+            return;
+        }
          var public = new Public({
              phone: userName,
              password: passWord
@@ -66,7 +68,7 @@ $(function () {
     })
     function phoneReg (phone) {  
         var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;  
-        if (!myreg.test(pone)) {  
+        if (!myreg.test(phone)) {
           return false;  
         } else {  
           return true;  
