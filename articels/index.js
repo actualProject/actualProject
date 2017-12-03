@@ -3,7 +3,6 @@ $(function () {
     let getSession = (key) => {
         return window.sessionStorage.getItem(key);
     };
-    $('')
     $('#loadMore').click(() => {
         if (getSession('phone') == null) {
             $('#panel').slideDown();
@@ -32,7 +31,6 @@ $(function () {
                     '<a href="#">' + '<img src="images/share.png" alt="">' + '</a>' +
                     '</div>';
                 $('.case_data').append(newBox);
-
             });
         };
         //发送请求获取数据
