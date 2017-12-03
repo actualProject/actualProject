@@ -41,6 +41,7 @@ $(function () {
         if (getSession('phone') == null) {
             $('#panel').slideDown();
         } else {
+<<<<<<< HEAD
             //发送请求获取数据
             $.ajax({
                 url: '../page.json',
@@ -53,7 +54,26 @@ $(function () {
                 error: () => {
                     alert('Attempt failed,verify that the network!');
                 }
+=======
+            const public = new Public({
+                form: 'product'
+>>>>>>> d0ab15f04219e6639f19f4a8be5fe40bc7e8a845
             });
+            const dataArr = public.getData();
+            UI(dataArr);
+            //发送请求获取数据
+            // $.ajax({
+            //     url: '../page.json',
+            //     dataType: 'json',
+            //     async: true,
+            //     success: (data) => {
+            //         let dataArr = data.product;
+            //         UI(dataArr);
+            //     },
+            //     error: () => {
+            //         alert('请求失败,请检查网络!');
+            //     }
+            // });
         }
 
     });
