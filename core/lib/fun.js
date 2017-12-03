@@ -27,8 +27,8 @@ Public.prototype = {
                     obj = '错误,没有找到';
                 }
             },
-            error: function(eee) {
-                console.log(eee);
+            error: function(err) {
+                let obj = err;
             }
         });
         return obj;
@@ -43,7 +43,7 @@ Public.prototype = {
         const arr = []
         for(let i = 0; i <= 9; i++) {
             const obj = {};
-            obj.phone = '1' + i;
+            obj.phone = '1341512321' + i;
             obj.password = '123456';
             obj.id = _.random(100000, 999999);
             obj.photo = '../../core/images/portrait.png';

@@ -37,6 +37,11 @@ actualProject
     password: 'xxxxx',
     id: 066624, // 用户ID
     photo: './core/images/portrait.png', // 头像
+    fillName: 'xxxx',   // 全名
+    emall: 'xxx@xx.com',  // 邮箱
+    sex: 'man/',    // 性别
+    servcice: 'smile/cry'  // 心情
+    text: 'xxxx',    // 个人简介
 },
 
 {
@@ -45,6 +50,6 @@ actualProject
     "吴加良": "GetStarted",
     "邓军祥": "HomePage",
     "何勇": "Pricing",
-    "待定"： "ArticelsDatalis"
+    "李晓艳"： "ArticelsDatalis"
 }
 ```
