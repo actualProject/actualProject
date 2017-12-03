@@ -49,8 +49,6 @@ Public.prototype = {
             obj.photo = '../../core/images/portrait.png';
             arr.push(obj);
         }
-        
-        JSON.stringify(arr);
         localStorage.setItem('users',JSON.stringify(arr));
     },
     loginUser: function() {

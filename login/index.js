@@ -26,6 +26,8 @@ $(function () {
         if(userName==''||passWord==''){
             alert("please enter your phone or password!");
             return;
+        }else if(!phoneReg(userName)){
+            alert('The number format is incorrect')
         }
         var public=new Public();
         var user= public.getUser();
@@ -61,8 +63,15 @@ $(function () {
         alert(result);
         sessionStorage.phone=obj.phone;
         window.location.href="../homePage/index.html?phone=" + userName;
-        $('.userName').val("");
-        $('.password').val("");
+        // $('.userName').val("");
+        // $('.password').val("");
     })
-
+    function phoneReg (phone) {  
+        var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;  
+        if (!myreg.test(pone)) {  
+          return false;  
+        } else {  
+          return true;  
+        }  
+      };
 })
