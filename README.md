@@ -12,6 +12,7 @@ actualProject
     |    |    |    |---bootstrap.min.js    bootstrapJS包。
     |    |    |    |---bootstrap.min.css   bootstrapCSS包。
     |    |    |    |---underscore-min.js   underscoreJS包。
+    |    |    |    |---animate.js          animate包。  
     |    |    |
     |    |    |---header.html       头部公共代码。
     |    |    |---footer.html       头部公共代码。
